@@ -10,7 +10,7 @@ For detailed event information, including registration, schedules, and updates, 
 
 ### Branch Information
 * The `main` branch contains the source code for the website.
-* The `gh-page`s branch is used for GitHub Pages deployment and is automatically generated from the main branch. Please avoid making manual changes to the gh-pages branch to prevent breaking the website.
+* The `gh-page`s branch is used for GitHub Pages deployment and is automatically generated from the `main` branch. Please avoid making manual changes to the `gh-pages` branch to prevent breaking the website.
 
 ### Contributing
 If you'd like to contribute to the development of the website:
