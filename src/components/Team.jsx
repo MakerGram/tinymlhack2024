@@ -5,52 +5,47 @@ import 'react-multi-carousel/lib/styles.css';
 
 const teamData = [
   {
-    name: 'Jane Cooper',
-    role: 'Creative Director',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/janecooper'
+    name: 'Abhay P A',
+    role: 'PoC TinyML',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQFgKInOvMJQ4g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708096385953?e=1738800000&v=beta&t=QHxI5A-Ri58grsbAhzzwC4GaibwouUYFgaT5Pc0Jrg4',
+    linkedin: 'https://www.linkedin.com/in/abhay-pa/'
   },
   {
-    name: 'Ronald Richards',
-    role: 'Lead Product Designer',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/ronaldrichards'
+    name: 'Salman Faris',
+    role: 'Sponsership Team',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
+    linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
   },
   {
-    name: 'Brooklyn Simmons',
-    role: 'Visual Designer',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/brooklynsimmons'
+    name: 'Swalah Amani',
+    role: 'MakerGram',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQGcKPsCJ8glWA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719734895384?e=1738800000&v=beta&t=mqXU4o4L9RqUxiTNjcHd76bDlkU8XZesrz9_BErEUPU',
+    linkedin: 'https://www.linkedin.com/in/swalahamani/'
   },
   {
-    name: 'Kristin Watson',
-    role: 'Lead UX Designer',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/kristinwatson'
+    name: 'Alosh Denny',
+    role: 'PoC TinyML',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQEgM1ISjqjxpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729781922307?e=1738800000&v=beta&t=z6vVF2SphG4KqU6tVQasN520GdNIdHQ4jUc5dVCTdWU',
+    linkedin: 'https://www.linkedin.com/in/aloshdenny/'
   },
   {
-    name: 'Darlene Robertson',
-    role: 'Javascript Developer',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/darlenerobertson'
+    name: 'Jasim',
+    role: 'PoC TinyML',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQGFM0jxtD-7Mg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730136127703?e=1738800000&v=beta&t=ttWWX0I80d6CE1vy3RDO89k85oGSt7dckonuzziRt10',
+    linkedin: 'https://www.linkedin.com/in/jasim-cm/'
+  },
+ 
+  {
+    name: 'Hazin',
+    role: 'Video Editor',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQFnyKbssr3lIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729970909107?e=1738800000&v=beta&t=1hgGxHhNuaRJd6GXvsj18TQDYaXZd6IDSgSJ-E7XZHw',
+    linkedin: 'https://www.linkedin.com/in/muhammed-hasin-6a1968270'
   },
   {
-    name: 'Leslie Alexander',
-    role: 'Customer Service Manager',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/lesliealexander'
-  },
-  {
-    name: 'Ralph Edwards',
-    role: 'Business Advisor',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/ralphedwards'
-  },
-  {
-    name: 'Floyd Miles',
-    role: 'Senior Developer',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/floydmiles'
+    name: 'Ishika Ishani',
+    role: 'Tech Team',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQGDvTRVE0Xk2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718221867398?e=1738800000&v=beta&t=6Jf1M4cZrOlTB-_F5wafo7EOa7o4uty_BWKpxSnpvDg',
+    linkedin: 'https://www.linkedin.com/in/ishika-ishani/'
   }
 ];
 
