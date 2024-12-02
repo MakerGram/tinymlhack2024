@@ -3,7 +3,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const rulesData = [
   {
-    question: "WHAT ARE THE PREREQUISITES?",
+    question: "WHAT IS TINYML?",
     answer: "To participate in the hackathon, you'll need a laptop, basic programming knowledge (Arduino is recommended), enthusiasm for TinyML and embedded systems"
   },
   {
