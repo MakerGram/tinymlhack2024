@@ -4,7 +4,7 @@ import { ChevronDown, ChevronUp } from 'lucide-react';
 const rulesData = [
   {
     question: "WHAT ARE THE PREREQUISITES?",
-    answer: "To participate in the hackathon, you'll need a laptop, basic programming knowledge (Arduino is recommended), enthusiasm for TinyML and embedded systems"
+    answer: "To participate in the hackathon, you'll need a laptop, basic programming knowledge (Arduino is recommended), enthusiasm for TinyML and embedded systems."
   },
   {
     question: "WHAT RESOURCES WILL BE PROVIDED?",
@@ -16,7 +16,7 @@ const rulesData = [
   },
   {
     question: "HOW CAN I REGISTER FOR A TEAM?",
-    answer: "For Team registration, only the team lead has to register and book the additional tickets. A team can have a maximum of 5 members including the lead. Solo registered participants can form team at the venue"
+    answer: "For Team registration, only the team lead has to register and book the additional tickets. A team can have a maximum of 5 members including the lead. Solo registered participants can form team at the venue."
   }
 ];
 

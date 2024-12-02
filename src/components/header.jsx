@@ -144,9 +144,9 @@ function Header() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
           loading="lazy"
-          src="https://i.ibb.co/Xj2vBBD/Screenshot-2024-11-26-at-9-55-18-AM-removebg-preview.png"
+          src="https://i.ibb.co/71Pv4Rp/Screenshot-2024-12-02-at-8-40-43-PM-Photoroom.png"
           alt="Company Logo"
-          className="object-contain w-[100px] md:w-[162px] aspect-[2.63]"
+          className="object-contain w-[300px] md:w-[500px] aspect-[9.63]"
         />
 
 <div className="flex items-center space-x-8 md:space-x-16">
@@ -208,6 +208,11 @@ function Header() {
         </motion.div>
 
         {/* Mobile Register Button */}
+        <a 
+      href="https://lu.ma/cdet5suw" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -216,6 +221,7 @@ function Header() {
         >
           REGISTER NOW
         </motion.button>
+        </a>
       </motion.div>
     </motion.div>
   );
