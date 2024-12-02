@@ -1,26 +1,26 @@
 import React from 'react';
-import { Mail, Phone, Twitter, Linkedin, Facebook, Globe } from 'lucide-react';
+import { Mail, Phone, Twitter, Linkedin, Facebook, Globe, Download } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
     { 
       icon: Twitter, 
-      link: "https://twitter.com/makegram",
+      link: "https://x.com/Maker_Gram",
       name: "Twitter"
     },
     { 
       icon: Linkedin, 
-      link: "https://linkedin.com/company/makegram",
+      link: "https://www.linkedin.com/company/makergram",
       name: "LinkedIn"
     },
     { 
       icon: Facebook, 
-      link: "https://facebook.com/makegram",
+      link: "https://www.facebook.com/makergram",
       name: "Facebook"
     },
     { 
       icon: Globe, 
-      link: "https://makegram.com",
+      link: "https://makergram.com",
       name: "Website"
     }
   ];
@@ -59,6 +59,30 @@ const Footer = () => {
                   <a href="/privacy" className="block hover:text-white">Privacy Policy</a>
                   <a href="/terms" className="block hover:text-white">Terms and Conditions</a>
                   <a href="/code-of-conduct" className="block hover:text-white">Code of Conduct</a>
+                </div>
+              </div>
+
+              {/* Join MakerGram */}
+              <div className="mt-6">
+                <h4 className="text-l tracking-wider text-white mb-2">Join Our Community</h4>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://makergram.com/community/register" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700 transition-colors"
+                  >
+                    Join MakerGram
+                  </a>
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.hoomans.tinkerhub" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex items-center bg-green-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-green-700 transition-colors"
+                  >
+                    <Download className="w-4 h-4 mr-2" />
+                    TinkerSpace App
+                  </a>
                 </div>
               </div>
             </div>

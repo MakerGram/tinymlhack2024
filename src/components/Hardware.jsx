@@ -64,7 +64,7 @@ const HardwareSection = () => {
   ];
 
   return (
-    <section className="bg-black text-white py-16 px-4">
+    <section className="bg-black text-white py-16 px-8">
       <motion.div
         ref={sectionRef}
         initial="hidden"

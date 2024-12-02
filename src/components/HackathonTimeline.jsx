@@ -8,22 +8,22 @@ const HackathonTimeline = () => {
     {
       day: 'Day 1',
       events: [
-        { time: '09:00', description: 'Event Kickoff and Introduction' },
-        { time: '10:00', description: 'Presentation of Challenges' },
-        { time: '11:00', description: 'Team Formation' },
-        { time: '12:30', description: 'Workshops and Hands-on Sessions' },
-        { time: '15:00', description: 'Check-in and Solution Building' },
-        { time: '18:00', description: 'Progress Update' },
-        { time: '00:00', description: 'Midnight Checkpoint' }
+        { time: '9:30 AM', description: 'CHECK-IN STARTS' },
+        { time: '10:30 AM', description: 'EVENT KICKOFF ' },
+        { time: '11:00 AM', description: 'TEAM FORMATION' },
+        { time: '12:00 PM', description: 'HANDS-ON SESSIONS' },
+        { time: '1:00 PM', description: 'BREAK' },
+        { time: '3:00 PM', description: 'BUILDING SOLUTION' },
+        { time: '7:00 PM', description: 'PROGRESS CHECK-IN' }
       ]
     },
     {
       day: 'Day 2',
       events: [
-        { time: '08:00', description: 'Morning Checkpoint' },
-        { time: '12:00', description: 'Hackathon Concludes' },
-        { time: '13:00', description: 'Team Presentations' },
-        { time: '15:00', description: 'Winners Announcement' }
+        { time: '08:00 AM', description: 'PROGRESS CHECK-IN' },
+       
+        { time: '2:30 PM', description: 'TEAM PRESENTATION' },
+        { time: '4:30 PM', description: 'WINNERS ANNOUNCEMENT' }
       ]
     }
   ];
@@ -140,12 +140,12 @@ const HackathonTimeline = () => {
                     ></div>
 
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-sm font-medium text-indigo-600">
+                      <span className="text-sm font-medium text-indigo-600 tracking-[3px]">
                         {event.time}
                       </span>
                     </div>
 
-                    <p className="text-white text-xs leading-tight">
+                    <p className="text-white text-xs leading-tight tracking-[3px] sm:tracking-[5px]">
                       {event.description}
                     </p>
                   </div>

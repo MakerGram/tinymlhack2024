@@ -15,6 +15,8 @@ import ContinuousPrizes from './components/ContinousPrize.jsx';
 import FaqSection from './components/Faq.jsx';
 import TeamSection from './components/Team.jsx';
 import Hardware from './components/Hardware.jsx';
+import Location from './components/Location.jsx';
+import Venue from './components/VenueText.jsx';
 
 function App() {
   return (
@@ -32,9 +34,13 @@ function App() {
       <SponsorsTextCarousel/>
       <RulesSection/>
       <ContinuousPrizes/>
-      <Mentor/>
+      
       <Hardware/>
       <TeamSection/>
+      
+      <Venue/>
+      <Location/>
+      <Venue/>
       <FaqSection/>
       <Footer/>
       
