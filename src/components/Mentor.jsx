@@ -27,7 +27,7 @@ const teamData = [
 
 const TeamMember = ({ name, role, image, linkedin }) => {
   return (
-    <div className="flex flex-col items-center space-y-8 ">
+    <div className="flex flex-col items-center space-y-2 ">
       <div className="rounded-full w-40 h-40 overflow-hidden ">
         <img src={image} alt={name} className="object-cover" />
       </div>
@@ -76,7 +76,7 @@ export default function TeamSection() {
           <TeamMember
             key={index}
             name={member.name}
-            role={member.role}
+           
             image={member.image}
             linkedin={member.linkedin}
           />
