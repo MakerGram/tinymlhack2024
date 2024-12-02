@@ -40,45 +40,37 @@ const ContinuousPrizes = () => {
 
     return (
       <div className="relative w-full overflow-hidden">
-         <h1 className=" text-white 
-          text-3xl 
-          sm:text-4xl 
-          font-bold 
-          tracking-[20px] 
-          uppercase 
-          py-3 
-          text-center 
-          mb-10 
-          animate-slide-up">
+         <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-[10px] sm:tracking-[20px] uppercase py-3 text-center mb-6 sm:mb-10 animate-slide-up">
          PRIZES </h1>
-        <div className={`flex ${animationClass} space-x-8 py-4`}>
+        <div className={`flex ${animationClass} space-x-4 sm:space-x-8 py-4`}>
           {/* Original items */}
           {items.map((item, index) => (
             <div
               key={index}
               className={`
                 ${item.color} 
-                flex-shrink-0 w-72 
-                rounded-2xl p-6 
+                flex-shrink-0 
+                w-48 sm:w-72 
+                rounded-xl sm:rounded-2xl 
+                p-4 sm:p-6 
                 border border-blue-800/30
                 hover:scale-105 
                 transition-transform duration-300
               `}
             >
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex justify-between items-center mb-3 sm:mb-4">
                 <item.icon 
-                  className={`${item.accentColor}`} 
-                  size={40} 
+                  className={`${item.accentColor} h-7 w-7 sm:h-10 sm:w-10`}
                   strokeWidth={1.5} 
                 />
-                <span className="text-3xl font-bold text-white/20">
+                <span className="text-2xl sm:text-3xl font-bold text-white/20">
                   0{index + 1}
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
                 {item.title}
               </h3>
-              <p className="text-blue-100 text-opacity-80">
+              <p className="text-sm sm:text-base text-blue-100 text-opacity-80">
                 {item.description}
               </p>
             </div>
@@ -90,27 +82,28 @@ const ContinuousPrizes = () => {
               key={`duplicate-${index}`}
               className={`
                 ${item.color} 
-                flex-shrink-0 w-72 
-                rounded-2xl p-6 
+                flex-shrink-0 
+                w-48 sm:w-72 
+                rounded-xl sm:rounded-2xl 
+                p-4 sm:p-6 
                 border border-blue-800/30
                 hover:scale-105 
                 transition-transform duration-300
               `}
             >
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex justify-between items-center mb-3 sm:mb-4">
                 <item.icon 
-                  className={`${item.accentColor}`} 
-                  size={40} 
+                  className={`${item.accentColor} h-7 w-7 sm:h-10 sm:w-10`}
                   strokeWidth={1.5} 
                 />
-                <span className="text-3xl font-bold text-white/20">
+                <span className="text-2xl sm:text-3xl font-bold text-white/20">
                   0{index + 1}
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
                 {item.title}
               </h3>
-              <p className="text-blue-100 text-opacity-80">
+              <p className="text-sm sm:text-base text-blue-100 text-opacity-80">
                 {item.description}
               </p>
             </div>
@@ -119,16 +112,11 @@ const ContinuousPrizes = () => {
       </div>
     );
   };
-/* bg-gradient-to-br from-blue-950 to-indigo-950 */
-  return (
-    <section className="bg-black py-20">
-      <div className="container mx-auto space-y-8">
-        {/* First Row - Sliding Right */}
-        {renderContinuousRow('right')}
 
-        {/* Second Row - Sliding Left 
-        {renderContinuousRow('left')}
-        */}
+  return (
+    <section className="bg-black py-12 sm:py-20">
+      <div className="container mx-auto space-y-8">
+        {renderContinuousRow('right')}
       </div>
     </section>
   );
