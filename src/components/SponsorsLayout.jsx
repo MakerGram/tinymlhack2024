@@ -10,7 +10,7 @@ const SponsorsLayout = () => {
     {
       image: "https://pbs.twimg.com/profile_images/1428037478871617536/ZD_JAMuu_400x400.jpg",
       name: "Edge Impulse", 
-      description: "Edge Impulse is ushering in the future of embedded machine learning by empowering developers to create and optimize solutions with real-world data. We are making the process of building, deploying, and scaling embedded ML applications easier and faster than ever, unlocking massive value across every industry, with millions of developers making billions of devices smarter"
+      description: "Edge Impulse is ushering in the future of embedded machine learning by empowering developers to create and optimize solutions with real-world data. We are making the process of building, deploying, and scaling embedded ML applications easier and faster than ever, unlocking massive value across every industry, with millions of developers making billions of devices smarter."
     }
   ];
 
