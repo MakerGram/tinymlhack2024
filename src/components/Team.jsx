@@ -12,7 +12,7 @@ const teamData = [
   },
   {
     name: 'Salman Faris',
-    role: 'Sponsership Team',
+    role: 'Sponsorship Team',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
     linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
   },
