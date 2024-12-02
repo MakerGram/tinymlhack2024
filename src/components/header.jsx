@@ -146,7 +146,7 @@ function Header() {
           loading="lazy"
           src="https://i.ibb.co/71Pv4Rp/Screenshot-2024-12-02-at-8-40-43-PM-Photoroom.png"
           alt="Company Logo"
-          className="object-contain w-[300px] md:w-[500px] aspect-[9.63]"
+          className="object-contain w-[300px] md:w-[500px] aspect-[6.63]"
         />
 
 <div className="flex items-center space-x-8 md:space-x-16">
