@@ -1,5 +1,4 @@
-
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Menu } from "lucide-react";
 
@@ -10,6 +9,29 @@ const navigationItems = [
   { id: 4, label: "FAQS", section: "faqs" }
 ];
 
+// Enhanced Register Button Component with more responsive sizes
+const RegisterButton = ({ className }) => (
+  <a 
+    href="https://lu.ma/cdet5suw" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className={className}
+  >
+    <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 lg:py-4 
+                 rounded-xl sm:rounded-2xl text-xs sm:text-sm md:text-base lg:text-lg
+                 border-2 border-indigo-700 border-solid bg-white bg-opacity-10 text-white
+                 transition-all duration-300"
+      tabIndex={0}
+    >
+      REGISTER NOW
+    </motion.button>
+  </a>
+);
+
+// Navigation Component
 export function Navbarlinks() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -56,22 +78,26 @@ export function Navbarlinks() {
 
   return (
     <>
-      {/* Mobile Menu Toggle */}
+      {/* Mobile Menu Toggle - Adjusted position */}
       <motion.button 
         whileTap={{ scale: 0.9 }}
-        className="md:hidden z-50 fixed top-6 right-6"
+        className="lg:hidden z-50 fixed top-4 sm:top-6 right-4 sm:right-6"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        {isMenuOpen ? <X size={24} color="white" /> : <Menu size={24} color="white" />}
+        {isMenuOpen ? 
+          <X size={24} color="white" className="h-6 w-6 sm:h-8 sm:w-8" /> : 
+          <Menu size={24} color="white" className="h-6 w-6 sm:h-8 sm:w-8" />
+        }
       </motion.button>
 
-      {/* Desktop Navigation */}
-      <nav className="hidden md:flex gap-[60px] items-center self-stretch my-auto whitespace-nowrap min-w-[240px]">
+      {/* Desktop Navigation - Enhanced responsive gaps */}
+      <nav className="hidden lg:flex gap-6 xl:gap-[60px] items-center self-stretch my-auto whitespace-nowrap min-w-[240px]">
         {navigationItems.map((item) => (
           <motion.div
             key={item.id}
             onClick={() => scrollToSection(item.section)}
-            className="self-stretch my-auto text-white hover:text-indigo-300 transition-colors cursor-pointer"
+            className="self-stretch my-auto text-white hover:text-indigo-300 transition-colors cursor-pointer
+                       text-sm xl:text-base 2xl:text-lg font-medium"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             tabIndex={0}
@@ -81,7 +107,7 @@ export function Navbarlinks() {
         ))}
       </nav>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Navigation - Adjusted text sizes */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div 
@@ -89,13 +115,13 @@ export function Navbarlinks() {
             animate="visible"
             exit="hidden"
             variants={menuVariants}
-            className="fixed inset-0 bg-stone-950 z-40 flex flex-col justify-center items-center md:hidden"
+            className="fixed inset-0 bg-stone-950 z-40 flex flex-col justify-center items-center lg:hidden"
           >
             {navigationItems.map((item, index) => (
               <motion.div
                 key={item.id}
                 onClick={() => scrollToSection(item.section)}
-                className="text-3xl text-white py-4 cursor-pointer"
+                className="text-xl sm:text-2xl md:text-3xl text-white py-3 sm:py-4 cursor-pointer"
                 variants={linkVariants}
                 custom={index}
                 initial="hidden"
@@ -113,7 +139,7 @@ export function Navbarlinks() {
   );
 }
 
-
+// Main Header Component
 function Header() {
   return (
     <motion.div 
@@ -127,8 +153,10 @@ function Header() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex items-center justify-between px-6 md:px-11 py-6 md:py-8 bg-stone-950 text-white"
+        className="flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-11 
+                   py-4 sm:py-6 md:py-7 lg:py-8 bg-stone-950 text-white"
       >
+        {/* First Logo - Adjusted sizes */}
         <motion.img
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -136,37 +164,26 @@ function Header() {
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/2ab850804b89467986bf6d3429dba897/a00abd21834cc6c981d48b9cdeccfb2794a178108acd85652ab8986dadc30252?apiKey=2ab850804b89467986bf6d3429dba897&"
           alt="Company Logo"
-          className="object-contain w-[100px] md:w-[162px] aspect-[4.63]"
+          className="object-contain w-[80px] sm:w-[100px] md:w-[130px] lg:w-[162px] aspect-[4.63]"
         />
 
-<motion.img
+        {/* Second Logo - Adjusted sizes */}
+        <motion.img
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
           loading="lazy"
           src="https://i.ibb.co/Xj2vBBD/Screenshot-2024-11-26-at-9-55-18-AM-removebg-preview.png"
           alt="Company Logo"
-          className="object-contain w-[100px] md:w-[162px] aspect-[2.63]"
+          className="object-contain w-[80px] sm:w-[100px] md:w-[130px] lg:w-[162px] aspect-[2.63]"
         />
 
-
-<div className="flex items-center space-x-8 md:space-x-16">
-  <Navbarlinks />
-  <a 
-      href="https://lu.ma/cdet5suw" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-  <motion.button
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="hidden md:block px-2 md:px-7 py-1.5 md:py-2.5 rounded-2xl border-2 border-indigo-700 border-solid bg-white bg-opacity-10 text-sm md:text-base"
-    tabIndex={0}
-  >
-    REGISTER NOW
-  </motion.button>
-  </a>
-</div>
+        <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-16">
+          <Navbarlinks />
+          <div className="hidden lg:block">
+            <RegisterButton />
+          </div>
+        </div>
       </motion.nav>
 
       <motion.div 
@@ -179,7 +196,7 @@ function Header() {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="text-sm md:text-2xl leading-none text-center text-white tracking-[10px] md:tracking-[39px]"
+          className="text-sm md:text-2xl leading-none text-center text-white tracking-[10px] md:tracking-[39px] mb-4 "
         >
           DECEMBER 21 | 22
         </motion.div>
@@ -209,20 +226,9 @@ function Header() {
         </motion.div>
 
         {/* Mobile Register Button */}
-        <a 
-      href="https://lu.ma/cdet5suw" 
-      target="_blank" 
-      rel="noopener noreferrer"
-    >
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="md:hidden mt-8 px-6 py-3 rounded-2xl border-2 border-indigo-700 border-solid bg-white bg-opacity-10"
-          tabIndex={0}
-        >
-          REGISTER NOW
-        </motion.button>
-        </a>
+        <div className="lg:hidden mt-6 sm:mt-8">
+          <RegisterButton />
+        </div>
       </motion.div>
     </motion.div>
   );
