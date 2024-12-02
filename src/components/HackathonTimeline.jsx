@@ -62,10 +62,8 @@ const HackathonTimeline = () => {
   return (
     <div className="bg-black py-[100px] px-4 relative">
       {/* Timeline Heading */}
-      <h1 className="text-white text-4xl font-bold tracking-[20px] uppercase py-3 text-center mb-10  animate-slide-up">
-  Timeline
-</h1>
-
+      <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-[10px] sm:tracking-[20px] uppercase py-3 text-center mb-6 sm:mb-10 animate-slide-up">
+        TIMELINE</h1>
 
       <div className="max-w-xl mx-auto relative">
         {/* Vertical Line */}
@@ -123,7 +121,7 @@ const HackathonTimeline = () => {
                   <div
                     className={`
                       w-[calc(50%-30px)] p-3 
-                      bg-gray-800/80 rounded-md shadow-lg
+                      bg-stone-900 rounded-md shadow-lg
                       ${eventIndex % 2 === 0 ? 'mr-auto' : 'ml-auto'}
                       relative
                       transition-all duration-300 ease-in-out
@@ -136,8 +134,8 @@ const HackathonTimeline = () => {
                         absolute top-1/2 transform -translate-y-1/2 
                         w-0 h-0 border-y-4 border-y-transparent 
                         ${eventIndex % 2 === 0
-                          ? 'right-full border-r-4 border-r-gray-800/80'
-                          : 'left-full border-l-4 border-l-gray-800/80'}
+                          ? 'right-full border-r-4 border-r-stone-900'
+                          : 'left-full border-l-4 border-l-stone-900'}
                       `}
                     ></div>
 

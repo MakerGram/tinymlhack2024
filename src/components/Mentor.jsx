@@ -12,7 +12,7 @@ const teamData = [
   },
   {
     name: 'Vinu',
-    role: 'Mnetor',
+    role: 'Mentor',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
     linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
   },
@@ -27,8 +27,8 @@ const teamData = [
 
 const TeamMember = ({ name, role, image, linkedin }) => {
   return (
-    <div className="flex flex-col items-center space-y-3 ">
-      <div className="rounded-full w-50 h-50 overflow-hidden ">
+    <div className="flex flex-col items-center space-y-8 ">
+      <div className="rounded-full w-40 h-40 overflow-hidden ">
         <img src={image} alt={name} className="object-cover" />
       </div>
       <h3 className=" text-white text-md leading-5 text-justify px-6 whitespace-pre-line animate-fade-in">{name}</h3>
@@ -44,7 +44,7 @@ export default function TeamSection() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -58,18 +58,8 @@ export default function TeamSection() {
 
   return (
     <div className="bg-black mx-auto px-4 py-8">
-      <h2 className=" text-white 
-          text-3xl 
-          sm:text-4xl 
-          font-bold 
-          tracking-[20px] 
-          uppercase 
-          py-3 
-          text-center 
-          mb-10 
-          animate-slide-up">
-        OUR MENTORS
-      </h2>
+     <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-[10px] sm:tracking-[20px] uppercase py-3 text-center mb-6 sm:mb-10 animate-slide-up">
+        OUR MENTORS</h1>
       <Carousel
         responsive={responsive}
         infinite={true}

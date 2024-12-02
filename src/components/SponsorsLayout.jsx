@@ -1,6 +1,34 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 
-const SponsorsLayout = () => {
+const SponsorsSection = () => {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true });
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 15
+      }
+    }
+  };
+
   const sponsors = [
     {
       image: "https://robu.in/wp-content/uploads/2023/11/seeed-Studio.png",
@@ -15,103 +43,50 @@ const SponsorsLayout = () => {
   ];
 
   return (
-    <section section id="sponsors" className="
-      bg-gradient-to-b from-black via-gray-900 to-black 
-      py-4 px-4 
-      min-h-screen 
-      flex items-center justify-center
-    ">
-      <div className="
-        w-full 
-        max-w-6xl 
-        bg-gray-900/30 
-        rounded-2xl 
-        p-8 
-        md:p-12 
-        shadow-2xl 
-        border border-gray-800
-      ">
-        
+    <section 
+      id="sponsors" 
+      className="text-center p-7 bg-black"
+    >
+      <motion.section 
+        ref={sectionRef}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={containerVariants}
+        className="flex flex-col items-center px-16 pt-7 pb-3 w-full rounded-xl bg-black bg-opacity-10 max-md:px-5 max-md:max-w-full"
+      >
+       
 
-        <div className="
-          grid 
-          md:grid-cols-2 
-          gap-8 lg:gap-12
-          items-stretch
-        ">
+        <div className="grid md:grid-cols-2 gap-8 w-full max-w-[1038px]">
           {sponsors.map((sponsor, index) => (
-            <div 
-              key={index} 
-              className="
-                flex 
-                flex-col 
-                items-center 
-                text-center 
-                group 
-                transition-all 
-                duration-300 
-                ease-in-out
-                hover:scale-105
-                hover:shadow-2xl
-                rounded-xl
-                overflow-hidden
-                bg-gray-800/50
-                p-6
-              "
+            <motion.div 
+              key={index}
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="bg-stone-900 rounded-xl overflow-hidden"
             >
-              <div className="
-                w-full 
-                mb-6 
-                overflow-hidden 
-                rounded-lg 
-                shadow-lg 
-                transform 
-                transition-transform 
-                duration-300 
-                group-hover:scale-110
-              ">
-                <img 
-                  loading="lazy" 
-                  src={sponsor.image}
-                  alt={`${sponsor.name} logo`}
-                  className="
-                    w-full 
-                    h-auto 
-                    object-cover 
-                    aspect-video 
-                    transition-transform 
-                    duration-100
-                  "
-                />
-              </div>
-
-              <h3 className="
-                text-xl md:text-2xl 
-                font-bold 
-                tracking-[9px]
-                leading-10
+              <img 
+                loading="lazy" 
+                src={sponsor.image}
+                alt={`${sponsor.name} logo`}
+                className="w-full h-48 object-contain bg-white p-4"
+              />
               
+              <div className="p-6">
+                <h3 className="text-xl tracking-[9px] text-indigo-600 mb-4 uppercase">
+                  {sponsor.name}
+                </h3>
                 
-                mb-4
-                text-white mt-4
-              ">
-                {sponsor.name}
-              </h3>
-
-              <p className="
-                text-sm md:text-base 
-                text-gray-300 
-                max-w-prose
-                mt-2.5 text-m leading-5 text-justify text-gray-300
-              ">
-                {sponsor.description}
-              </p>
-            </div>
+                <p className="text-m leading-5 text-justify text-gray-300">
+                  {sponsor.description}
+                </p>
+              </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.section>
     </section>
   );
 };
 
-export default SponsorsLayout;
+export default SponsorsSection;

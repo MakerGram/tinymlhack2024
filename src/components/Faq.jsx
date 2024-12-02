@@ -109,20 +109,8 @@ export default function RulesSection() {
         px-1 
         py-[50px]
       ">
-        <h1 className="
-          text-white 
-          text-3xl 
-          sm:text-4xl 
-          font-bold 
-          tracking-[20px] 
-          uppercase 
-          py-3 
-          text-center 
-          mb-10 
-          animate-slide-up
-        ">
-          FAQS
-        </h1>
+        <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-[10px] sm:tracking-[20px] uppercase py-3 text-center mb-6 sm:mb-10 animate-slide-up">
+        FAQS</h1>
         
         <div className="
           grid 
