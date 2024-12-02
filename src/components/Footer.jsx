@@ -109,7 +109,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="mt-8 pt-4 border-t border-gray-800 text-center text-gray-400 text-sm">
-            Copyright © 2024 MakeGram in association with Tinkerspace and SeeedStudio
+            Copyright © 2024 MakeGram in association with Tinkerspace.
           </div>
         </div>
       </div>
