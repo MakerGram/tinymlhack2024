@@ -5,14 +5,12 @@ const SponsorsLayout = () => {
     {
       image: "https://robu.in/wp-content/uploads/2023/11/seeed-Studio.png",
       name: "Seeed Studio",
-      description: "Seeed Technology (also known as, Seeed Studio) is an innovative IoT technology company, which specializes in hardware research, production and sales for edge computing, network communication, and smart sensing applications. Moreover, the company provides a wide variety of R&D support and services for customized products.
-"
+      description: "Seeed Technology (also known as, Seeed Studio) is an innovative IoT technology company, which specializes in hardware research, production and sales for edge computing, network communication, and smart sensing applications. Moreover, the company provides a wide variety of R&D support and services for customized products."
     },
     {
       image: "https://pbs.twimg.com/profile_images/1428037478871617536/ZD_JAMuu_400x400.jpg",
       name: "Edge Impulse", 
-      description: "Edge Impulse is ushering in the future of embedded machine learning by empowering developers to create and optimize solutions with real-world data. We are making the process of building, deploying, and scaling embedded ML applications easier and faster than ever, unlocking massive value across every industry, with millions of developers making billions of devices smarter.
-"
+      description: "Edge Impulse is ushering in the future of embedded machine learning by empowering developers to create and optimize solutions with real-world data. We are making the process of building, deploying, and scaling embedded ML applications easier and faster than ever, unlocking massive value across every industry, with millions of developers making billions of devices smarter"
     }
   ];
 

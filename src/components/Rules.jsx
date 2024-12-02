@@ -16,9 +16,7 @@ const rulesData = [
   },
   {
     question: "HOW CAN I REGISTER FOR A TEAM?",
-    answer: "For Team registration, only the team lead has to register and book the additional tickets. A team can have a maximum of 5 members including the lead. Solo registered participants can form team at the venue
-
-"
+    answer: "For Team registration, only the team lead has to register and book the additional tickets. A team can have a maximum of 5 members including the lead. Solo registered participants can form team at the venue"
   }
 ];
 
