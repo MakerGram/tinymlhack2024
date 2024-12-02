@@ -36,11 +36,12 @@ function App() {
       <ContinuousPrizes/>
       
       <Hardware/>
-      <TeamSection/>
       
+      <Mentor/>
       <Venue/>
       <Location/>
       <Venue/>
+      <TeamSection/>
       <FaqSection/>
       <Footer/>
       
