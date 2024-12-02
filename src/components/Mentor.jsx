@@ -7,19 +7,19 @@ const teamData = [
   {
     name: 'Akhil',
     role: 'Mentor',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQFgKInOvMJQ4g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708096385953?e=1738800000&v=beta&t=QHxI5A-Ri58grsbAhzzwC4GaibwouUYFgaT5Pc0Jrg4',
+    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
     linkedin: 'https://www.linkedin.com/in/abhay-pa/'
   },
   {
     name: 'Vinu',
     role: 'Mentor',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
+    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
     linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
   },
   {
     name: 'Amal',
     role: 'Mentor',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQGcKPsCJ8glWA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719734895384?e=1738800000&v=beta&t=mqXU4o4L9RqUxiTNjcHd76bDlkU8XZesrz9_BErEUPU',
+    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
     linkedin: 'https://www.linkedin.com/in/swalahamani/'
   },
   
