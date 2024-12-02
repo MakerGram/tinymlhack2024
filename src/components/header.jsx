@@ -144,10 +144,11 @@ function Header() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
           loading="lazy"
-          src="https://i.ibb.co/71Pv4Rp/Screenshot-2024-12-02-at-8-40-43-PM-Photoroom.png"
+          src="https://i.ibb.co/Xj2vBBD/Screenshot-2024-11-26-at-9-55-18-AM-removebg-preview.png"
           alt="Company Logo"
-          className="object-contain w-[300px] md:w-[500px] aspect-[6.63]"
+          className="object-contain w-[100px] md:w-[162px] aspect-[2.63]"
         />
+
 
 <div className="flex items-center space-x-8 md:space-x-16">
   <Navbarlinks />
