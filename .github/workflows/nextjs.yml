@@ -39,7 +39,7 @@ jobs:
           unset CI
           npm run build
 
-      # Step 6: Export the static files (for Next.js, if needed)
+      # Step 6: Export static files (only for Next.js)
       - name: Export Static Files
         if: fileExists('next.config.js')
         run: npm run export
@@ -49,5 +49,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out # or ./build for React apps
+          publish_dir: ./build # Use ./build for React apps, ./out for Next.js
           publish_branch: gh-pages
