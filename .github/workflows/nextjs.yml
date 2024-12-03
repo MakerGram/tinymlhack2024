@@ -1,4 +1,4 @@
-name: Build React App
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
@@ -6,25 +6,48 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # Step 2: Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "16"
 
+      # Step 3: Install dependencies
       - name: Install Dependencies
         run: npm install
 
+      # Step 4: Add missing Babel dependency (if needed)
       - name: Add Missing Babel Dependency
         run: npm install --save-dev @babel/plugin-proposal-private-property-in-object
 
-      - name: Build React App
+      # Step 5: Build the app
+      - name: Build the App
         run: |
           unset CI
           npm run build
+
+      # Step 6: Export the static files (for Next.js, if needed)
+      - name: Export Static Files
+        if: fileExists('next.config.js')
+        run: npm run export
+
+      # Step 7: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out # or ./build for React apps
+          publish_branch: gh-pages
