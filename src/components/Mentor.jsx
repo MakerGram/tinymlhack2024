@@ -25,7 +25,7 @@ const teamData = [
   {
     name: 'Akhil',
     role: 'Mentor',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
+    image: 'https://i.ibb.co/T8yL7qH/IMG-20241203-WA0010.jpg',
     linkedin: 'https://www.linkedin.com/in/abhay-pa/'
   },
   {
