@@ -28,13 +28,13 @@ const Footer = () => {
   const contactInfo = [
     { 
       icon: Mail, 
-      text: "contact@tinymllhackathon.com",
-      link: "mailto:contact@tinymllhackathon.com"
+      text: "abhay@makergram.com",
+      link: "mailto:abhay@makergram.com"
     },
     { 
       icon: Phone, 
-      text: "+12-8883456789",
-      link: "tel:+12-8883456789"
+      text: "+91-8129679886",
+      link: "tel:+91-8129679886"
     }
   ];
 

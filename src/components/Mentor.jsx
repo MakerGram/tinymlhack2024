@@ -5,6 +5,24 @@ import 'react-multi-carousel/lib/styles.css';
 
 const teamData = [
   {
+    name: 'Muhammed Zain',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQG9kUghLVeOXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669191931988?e=1738800000&v=beta&t=k5C5wVzoTSZHMHRB5nn2HnAbY2Vg2nq9Y-oJdch39VE',
+    linkedin: 'https://www.linkedin.com/in/zainmfd/'
+  },
+  {
+    name: 'Salman Faris',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
+    linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
+  },
+  {
+    name: 'Saheen Palayi',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/C5603AQEGZ6RLQ8iyWw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1620924580345?e=1738800000&v=beta&t=UdKsaNoltVFTR54yr7OEeUZmvivjZaFtBjOeUGEcq0M',
+    linkedin: 'https://www.linkedin.com/in/saheenpalayi/?originalSubdomain=in'
+  },
+  {
     name: 'Akhil',
     role: 'Mentor',
     image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',

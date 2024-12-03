@@ -10,18 +10,7 @@ const teamData = [
     image: 'https://media.licdn.com/dms/image/v2/D5603AQFgKInOvMJQ4g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708096385953?e=1738800000&v=beta&t=QHxI5A-Ri58grsbAhzzwC4GaibwouUYFgaT5Pc0Jrg4',
     linkedin: 'https://www.linkedin.com/in/abhay-pa/'
   },
-  {
-    name: 'Salman Faris',
-    role: 'Sponsorship Team',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
-    linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
-  },
-  {
-    name: 'Swalah Amani',
-    role: 'MakerGram',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQGcKPsCJ8glWA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719734895384?e=1738800000&v=beta&t=mqXU4o4L9RqUxiTNjcHd76bDlkU8XZesrz9_BErEUPU',
-    linkedin: 'https://www.linkedin.com/in/swalahamani/'
-  },
+  
   {
     name: 'Alosh Denny',
     role: 'PoC TinyML',
@@ -34,6 +23,24 @@ const teamData = [
     image: 'https://media.licdn.com/dms/image/v2/D5603AQGFM0jxtD-7Mg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730136127703?e=1738800000&v=beta&t=ttWWX0I80d6CE1vy3RDO89k85oGSt7dckonuzziRt10',
     linkedin: 'https://www.linkedin.com/in/jasim-cm/'
   },
+  {
+    name: 'Swalah Amani',
+    role: 'MakerGram',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQGcKPsCJ8glWA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719734895384?e=1738800000&v=beta&t=mqXU4o4L9RqUxiTNjcHd76bDlkU8XZesrz9_BErEUPU',
+    linkedin: 'https://www.linkedin.com/in/swalahamani/'
+  },
+  {
+    name: 'Reema Shaji',
+    role: 'Space Manager',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQFCbaDHDxQyPg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1710872377193?e=1738800000&v=beta&t=v8UznwEFoERJfhKNa0G9ogjyMDYU5zQUoUXg1tDayl8',
+    linkedin: 'https://www.linkedin.com/in/reemashaji/?originalSubdomain=in'
+  },
+  {
+    name: 'Salman Faris',
+    role: 'Sponsorship Team',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
+    linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
+  },
  
   {
     name: 'Hazin',
@@ -41,12 +48,27 @@ const teamData = [
     image: 'https://media.licdn.com/dms/image/v2/D5603AQFnyKbssr3lIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729970909107?e=1738800000&v=beta&t=1hgGxHhNuaRJd6GXvsj18TQDYaXZd6IDSgSJ-E7XZHw',
     linkedin: 'https://www.linkedin.com/in/muhammed-hasin-6a1968270'
   },
+  
+  {
+    name: 'Dheeraj Kurungadath',
+    role: 'Designer',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQFtqXHi2184tQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718265742199?e=1738800000&v=beta&t=kQZWP_y1leKuA_phBpVMMRoDfebrikn7DbPyzAXQMFY',
+    linkedin: 'https://www.linkedin.com/in/dheeraj-kurungadath-268bb3294/'
+  },
+  {
+    name: 'Adithyan Pramod',
+    role: 'Designer',
+    image: 'https://i.ibb.co/0ByPZN4/Screenshot-2024-12-03-at-8-24-24-AM.png',
+    linkedin: 'https://www.linkedin.com/in/adithyan-pramod-73b81527b/'
+  },
   {
     name: 'Ishika Ishani',
-    role: 'Tech Team',
+    role: 'Web Developer',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQGDvTRVE0Xk2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718221867398?e=1738800000&v=beta&t=6Jf1M4cZrOlTB-_F5wafo7EOa7o4uty_BWKpxSnpvDg',
     linkedin: 'https://www.linkedin.com/in/ishika-ishani/'
   }
+
+
 ];
 
 const TeamMember = ({ name, role, image, linkedin }) => {

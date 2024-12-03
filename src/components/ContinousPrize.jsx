@@ -4,29 +4,29 @@ import { Award, Star, Rocket, Trophy, Globe, Shield } from 'lucide-react';
 const ContinuousPrizes = () => {
   const items = [
     { 
-      title: "Innovation Catalyst", 
-      description: "Groundbreaking technological advancements",
+      title: "$500 Prize Pool", 
+      description: "An exciting cash prize pool of $500 to be distributed among the top performers.",
       icon: Rocket,
       color: "bg-blue-900/70",
       accentColor: "text-blue-400"
     },
     { 
-      title: "Strategic Leadership", 
-      description: "Exceptional vision and transformative leadership",
+      title: "Exclusive Seeed Hardware Kits", 
+      description: "Cutting-edge hardware tools & kits from Seeed Studio to empower your project!",
       icon: Trophy,
       color: "bg-indigo-900/70",
       accentColor: "text-indigo-400"
     },
     { 
-      title: "Research Frontier", 
-      description: "Pushing boundaries of scientific discovery",
+      title: "$500 Prize Pool", 
+      description: "An exciting cash prize pool of $500 to be distributed among the top performers.",
       icon: Star,
       color: "bg-blue-900/70",
       accentColor: "text-blue-400"
     },
     { 
-      title: "Global Impact", 
-      description: "Worldwide transformative potential",
+      title: "Exclusive Seeed Hardware Kits", 
+      description: "Cutting-edge hardware tools & kits from Seeed Studio to empower your project!",
       icon: Globe,
       color: "bg-indigo-900/70",
       accentColor: "text-indigo-400"
@@ -64,7 +64,7 @@ const ContinuousPrizes = () => {
                   strokeWidth={1.5} 
                 />
                 <span className="text-2xl sm:text-3xl font-bold text-white/20">
-                  0{index + 1}
+                  
                 </span>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
@@ -97,7 +97,7 @@ const ContinuousPrizes = () => {
                   strokeWidth={1.5} 
                 />
                 <span className="text-2xl sm:text-3xl font-bold text-white/20">
-                  0{index + 1}
+                  
                 </span>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
