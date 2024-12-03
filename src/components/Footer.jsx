@@ -54,7 +54,7 @@ const Footer = () => {
               </p>
               
               <div className="space-y-2">
-                <h4 className="text-l tracking-wider text-white mb-2">Quick Links</h4>
+                <h4 className="text-l tracking-[5px] text-white mb-2">QUICK LINKS</h4>
                 <div className="text-gray-300 space-y-1 text-xs">
                   <a href="/privacy" className="block hover:text-white">Privacy Policy</a>
                   <a href="/terms" className="block hover:text-white">Terms and Conditions</a>
@@ -64,7 +64,7 @@ const Footer = () => {
 
               {/* Join MakerGram */}
               <div className="mt-6">
-                <h4 className="text-l tracking-wider text-white mb-2">Join Our Community</h4>
+                <h4 className="text-l tracking-[5px] text-white mb-2">JOIN OUR COMMUNITY</h4>
                 <div className="flex space-x-4">
                   <a 
                     href="https://makergram.com/community/register" 

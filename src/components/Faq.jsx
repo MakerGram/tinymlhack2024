@@ -85,6 +85,7 @@ function FaqCard({ question, answer }) {
             py-4 
             whitespace-pre-line 
             animate-fade-in
+            text-gray-300
           "
         >
           {answer}

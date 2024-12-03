@@ -85,21 +85,10 @@ const TrackCarousel = () => {
           animate-fade-in-up">
           {/* Track Name */}
           <div className="relative group">
-            <h2 className="
-              text-2xl md:text-4xl 
-              font-bold 
-              tracking-wide 
-              text-white 
-              uppercase 
-              mb-4
-              bg-clip-text 
-              bg-gradient-to-r 
-              from-indigo-400 
-              to-purple-500
-              text-transparent
-            ">
+          <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-[10px] sm:tracking-[20px] uppercase py-3 text-center mb-6 sm:mb-10 animate-slide-up">
+        
               {currentTrack.name}
-            </h2>
+            </h1>
             <div className="
               absolute 
               -bottom-2 
