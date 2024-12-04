@@ -132,9 +132,16 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
+
           <div className="mt-8 pt-4 border-t border-gray-800 text-center text-gray-400 text-sm">
             Copyright © 2024 MakeGram in association with Tinkerspace.
           </div>
+
+
+          <div className="mt-8 pt-4  text-center text-gray-400 text-sm">
+          Disclaimer: All product names, logos, and brands are the property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, logos, and brands does not imply endorsement.`
+          </div>
+         
         </div>
       </div>
     </footer>
