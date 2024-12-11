@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Menu } from "lucide-react";
 
@@ -9,29 +9,81 @@ const navigationItems = [
   { id: 4, label: "FAQS", section: "faqs" }
 ];
 
-// Enhanced Register Button Component with more responsive sizes
-const RegisterButton = ({ className }) => (
-  <a 
-    href="https://lu.ma/cdet5suw" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className={className}
+// Countdown Timer Component
+const CountdownTimer = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const targetDate = new Date("December 21, 2024 00:00:00").getTime();
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      setTimeLeft({ days, hours, minutes, seconds });
+
+      if (distance < 0) {
+        clearInterval(timer);
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <motion.div 
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 1.5 }}
+      className="flex justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-6 sm:mt-8"
+    >
+      {Object.entries(timeLeft).map(([unit, value]) => (
+         <div 
+         key={unit} 
+         className="flex flex-col items-center pt-8"
+       >
+         <div className="self-center font-medium leading-none text-4xl md:text-[80px] tracking-[5px] md:tracking-[12px] text-white">
+           {value < 10 ? `0${value}` : value}
+         </div>
+         <div className="text-sm md:text-xl text-white uppercase mt-2 tracking-[7px]">
+           {unit}
+         </div>
+        </div>
+      ))}
+    </motion.div>
+  );
+};
+
+// Registration Closed Button Component
+const RegistrationClosedButton = ({ className }) => (
+  <div 
+    className={`${className} cursor-not-allowed`}
   >
-    <motion.button
+    <motion.div
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className="px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 lg:py-4 
                  rounded-xl sm:rounded-2xl text-xs sm:text-sm md:text-base lg:text-lg
-                 border-2 border-indigo-700 border-solid bg-white bg-opacity-10 text-white
-                 transition-all duration-300"
+                 border-2 border-red-700 border-solid bg-red-950 bg-opacity-50 text-red-300
+                 transition-all duration-300 opacity-70"
       tabIndex={0}
     >
-      REGISTER NOW
-    </motion.button>
-  </a>
+      REGISTRATION CLOSED
+    </motion.div>
+  </div>
 );
 
-// Navigation Component
+// Navigation Component (Same as before)
 export function Navbarlinks() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -78,7 +130,6 @@ export function Navbarlinks() {
 
   return (
     <>
-      {/* Mobile Menu Toggle - Adjusted position */}
       <motion.button 
         whileTap={{ scale: 0.9 }}
         className="lg:hidden z-50 fixed top-4 sm:top-6 right-4 sm:right-6"
@@ -90,7 +141,6 @@ export function Navbarlinks() {
         }
       </motion.button>
 
-      {/* Desktop Navigation - Enhanced responsive gaps */}
       <nav className="hidden lg:flex gap-6 xl:gap-[60px] items-center self-stretch my-auto whitespace-nowrap min-w-[240px]">
         {navigationItems.map((item) => (
           <motion.div
@@ -107,7 +157,6 @@ export function Navbarlinks() {
         ))}
       </nav>
 
-      {/* Mobile Navigation - Adjusted text sizes */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div 
@@ -156,7 +205,6 @@ function Header() {
         className="flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-11 
                    py-4 sm:py-6 md:py-7 lg:py-8 bg-stone-950 text-white"
       >
-        {/* First Logo - Adjusted sizes */}
         <motion.img
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -167,7 +215,6 @@ function Header() {
           className="object-contain w-[80px] sm:w-[100px] md:w-[130px] lg:w-[162px] aspect-[4.63]"
         />
 
-        {/* Second Logo - Adjusted sizes */}
         <motion.img
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -181,7 +228,7 @@ function Header() {
         <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-16">
           <Navbarlinks />
           <div className="hidden lg:block">
-            <RegisterButton />
+            <RegistrationClosedButton />
           </div>
         </div>
       </motion.nav>
@@ -225,9 +272,12 @@ function Header() {
           HACK WHERE AI MEET HARDWARE
         </motion.div>
 
+        {/* Countdown Timer */}
+        <CountdownTimer />
+
         {/* Mobile Register Button */}
         <div className="lg:hidden mt-6 sm:mt-8">
-          <RegisterButton />
+          <RegistrationClosedButton />
         </div>
       </motion.div>
     </motion.div>
