@@ -45,19 +45,19 @@ const CountdownTimer = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 1.5 }}
-      className="flex justify-center space-x-4 sm:space-x-6 md:space-x-8 mt-6 sm:mt-8"
+      className="flex justify-center space-x-3 xs:space-x-4 sm:space-x-6 md:space-x-8 mt-4 sm:mt-6 md:mt-8"
     >
       {Object.entries(timeLeft).map(([unit, value]) => (
-         <div 
-         key={unit} 
-         className="flex flex-col items-center pt-8"
-       >
-         <div className="self-center font-medium leading-none text-4xl md:text-[80px] tracking-[5px] md:tracking-[12px] text-white">
-           {value < 10 ? `0${value}` : value}
-         </div>
-         <div className="text-sm md:text-xl text-white uppercase mt-2 tracking-[7px]">
-           {unit}
-         </div>
+        <div 
+          key={unit} 
+          className="flex flex-col items-center pt-4 sm:pt-6 md:pt-8"
+        >
+          <div className="self-center font-medium leading-none text-2xl xs:text-3xl sm:text-4xl md:text-[80px] tracking-[3px] xs:tracking-[4px] sm:tracking-[5px] md:tracking-[12px] text-white">
+            {value < 10 ? `0${value}` : value}
+          </div>
+          <div className="text-xs xs:text-sm sm:text-base md:text-xl text-white uppercase mt-1 sm:mt-2 tracking-[4px] sm:tracking-[7px]">
+            {unit}
+          </div>
         </div>
       ))}
     </motion.div>
@@ -72,9 +72,12 @@ const RegistrationClosedButton = ({ className }) => (
     <motion.div
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className="px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-2.5 md:py-3 lg:py-4 
-                 rounded-xl sm:rounded-2xl text-xs sm:text-sm md:text-base lg:text-lg
-                 border-2 border-red-700 border-solid bg-red-950 bg-opacity-50 text-red-300
+      className="px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 
+                 py-1.5 xs:py-2 sm:py-2.5 md:py-3 lg:py-4 
+                 rounded-lg xs:rounded-xl sm:rounded-2xl 
+                 text-[10px] xs:text-xs sm:text-sm md:text-base lg:text-lg
+                 border-2 border-red-700 border-solid 
+                 bg-red-950 bg-opacity-50 text-red-300
                  transition-all duration-300 opacity-70"
       tabIndex={0}
     >
@@ -83,7 +86,7 @@ const RegistrationClosedButton = ({ className }) => (
   </div>
 );
 
-// Navigation Component (Same as before)
+// Navigation Component
 export function Navbarlinks() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -132,22 +135,22 @@ export function Navbarlinks() {
     <>
       <motion.button 
         whileTap={{ scale: 0.9 }}
-        className="lg:hidden z-50 fixed top-4 sm:top-6 right-4 sm:right-6"
+        className="lg:hidden z-50 fixed top-4 xs:top-5 sm:top-6 right-4 xs:right-5 sm:right-6"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
         {isMenuOpen ? 
-          <X size={24} color="white" className="h-6 w-6 sm:h-8 sm:w-8" /> : 
-          <Menu size={24} color="white" className="h-6 w-6 sm:h-8 sm:w-8" />
+          <X size={24} color="white" className="h-5 w-5 xs:h-6 xs:w-6 sm:h-8 sm:w-8" /> : 
+          <Menu size={24} color="white" className="h-5 w-5 xs:h-6 xs:w-6 sm:h-8 sm:w-8" />
         }
       </motion.button>
 
-      <nav className="hidden lg:flex gap-6 xl:gap-[60px] items-center self-stretch my-auto whitespace-nowrap min-w-[240px]">
+      <nav className="hidden lg:flex gap-4 sm:gap-6 xl:gap-[60px] items-center self-stretch my-auto whitespace-nowrap min-w-[240px]">
         {navigationItems.map((item) => (
           <motion.div
             key={item.id}
             onClick={() => scrollToSection(item.section)}
             className="self-stretch my-auto text-white hover:text-indigo-300 transition-colors cursor-pointer
-                       text-sm xl:text-base 2xl:text-lg font-medium"
+                       text-xs sm:text-sm xl:text-base 2xl:text-lg font-medium"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             tabIndex={0}
@@ -170,7 +173,7 @@ export function Navbarlinks() {
               <motion.div
                 key={item.id}
                 onClick={() => scrollToSection(item.section)}
-                className="text-xl sm:text-2xl md:text-3xl text-white py-3 sm:py-4 cursor-pointer"
+                className="text-lg xs:text-xl sm:text-2xl md:text-3xl text-white py-2 xs:py-3 sm:py-4 cursor-pointer"
                 variants={linkVariants}
                 custom={index}
                 initial="hidden"
@@ -202,8 +205,8 @@ function Header() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-11 
-                   py-4 sm:py-6 md:py-7 lg:py-8 bg-stone-950 text-white"
+        className="flex items-center justify-between px-3 xs:px-4 sm:px-6 md:px-8 lg:px-11 
+                   py-3 xs:py-4 sm:py-6 md:py-7 lg:py-8 bg-stone-950 text-white"
       >
         <motion.img
           initial={{ scale: 0.8, opacity: 0 }}
@@ -212,7 +215,7 @@ function Header() {
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/2ab850804b89467986bf6d3429dba897/a00abd21834cc6c981d48b9cdeccfb2794a178108acd85652ab8986dadc30252?apiKey=2ab850804b89467986bf6d3429dba897&"
           alt="Company Logo"
-          className="object-contain w-[80px] sm:w-[100px] md:w-[130px] lg:w-[162px] aspect-[4.63]"
+          className="object-contain w-[60px] xs:w-[70px] sm:w-[100px] md:w-[130px] lg:w-[162px] aspect-[4.63]"
         />
 
         <motion.img
@@ -222,10 +225,10 @@ function Header() {
           loading="lazy"
           src="https://i.ibb.co/Xj2vBBD/Screenshot-2024-11-26-at-9-55-18-AM-removebg-preview.png"
           alt="Company Logo"
-          className="object-contain w-[80px] sm:w-[100px] md:w-[130px] lg:w-[162px] aspect-[2.63]"
+          className="object-contain w-[60px] xs:w-[70px] sm:w-[100px] md:w-[130px] lg:w-[162px] aspect-[2.63]"
         />
 
-        <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-16">
+        <div className="flex items-center space-x-2 xs:space-x-3 sm:space-x-6 md:space-x-8 lg:space-x-16">
           <Navbarlinks />
           <div className="hidden lg:block">
             <RegistrationClosedButton />
@@ -237,13 +240,13 @@ function Header() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="flex flex-col items-center justify-center mt-10 text-center text-white h-full px-4"
+        className="flex flex-col items-center justify-center mt-6 xs:mt-8 sm:mt-10 text-center text-white h-full px-3 xs:px-4 sm:px-4"
       >
         <motion.div 
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="text-sm md:text-2xl leading-none text-center text-white tracking-[10px] md:tracking-[39px] mb-4 "
+          className="text-[10px] xs:text-xs sm:text-base md:text-2xl leading-none text-center text-white tracking-[5px] xs:tracking-[7px] sm:tracking-[10px] md:tracking-[39px] mb-2 xs:mb-3 sm:mb-4"
         >
           DECEMBER 21 | 22
         </motion.div>
@@ -251,7 +254,7 @@ function Header() {
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.9 }}
-          className="self-center font-medium leading-none border border-black border-solid text-5xl md:text-[120px] tracking-[10px] md:tracking-[52px]"
+          className="self-center font-medium leading-none border border-black border-solid text-3xl xs:text-4xl sm:text-5xl md:text-[120px] tracking-[5px] xs:tracking-[7px] sm:tracking-[10px] md:tracking-[52px]"
         >
           TINYML
         </motion.div>
@@ -259,7 +262,7 @@ function Header() {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.1 }}
-          className="pt-6 md:pt-12 w-full font-bold text-3xl md:text-6xl leading-none mx-4 text-center text-white tracking-[4px] md:tracking-[8px] whitespace-nowrap"
+          className="pt-3 xs:pt-4 sm:pt-6 md:pt-12 w-full font-bold text-xl xs:text-2xl sm:text-3xl md:text-6xl leading-none mx-2 text-center text-white tracking-[2px] xs:tracking-[3px] sm:tracking-[4px] md:tracking-[8px] whitespace-nowrap"
         >
           24-HR
         </motion.div>
@@ -267,7 +270,7 @@ function Header() {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.3 }}
-          className="self-center py-4 md:py-5 text-xl md:text-4xl leading-none tracking-[4px] md:tracking-[8px] text-center text-white w-full max-w-[1290px]"
+          className="self-center py-2 xs:py-3 sm:py-4 md:py-5 text-sm xs:text-base sm:text-xl md:text-4xl leading-none tracking-[2px] xs:tracking-[3px] sm:tracking-[4px] md:tracking-[8px] text-center text-white w-full max-w-[1290px]"
         >
           HACK WHERE AI MEET HARDWARE
         </motion.div>
@@ -276,7 +279,7 @@ function Header() {
         <CountdownTimer />
 
         {/* Mobile Register Button */}
-        <div className="lg:hidden mt-6 sm:mt-8">
+        <div className="lg:hidden mt-4 xs:mt-5 sm:mt-6">
           <RegistrationClosedButton />
         </div>
       </motion.div>
