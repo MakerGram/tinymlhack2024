@@ -4,39 +4,43 @@ const HackathonTimeline = () => {
   const [visibleItems, setVisibleItems] = useState([]);
   const timelineRefs = useRef([]);
 
-  const timeline = [
+Here’s the timeline with all descriptions in capital letters:
+
+```javascript
+const timeline = [
   {
     day: 'Day 1',
     events: [
-      { time: '10:30 AM', description: 'Event Kickoff and Introduction' },
-      { time: '10:30 AM', description: 'What is TinkerHub and TinkerSpace, and Why?' },
-      { time: '10:40 AM', description: 'Intro Session: Tech for Good' },
-      { time: '11:00 AM', description: 'Event Introduction' },
-      { time: '11:15 AM', description: 'Pre-requisites Check + Continuous Evaluation' },
-      { time: '11:25 AM', description: 'Workshop (Hands-on Session)' },
-      { time: '12:30 PM', description: 'Break for Lunch' },
-      { time: '2:00 PM', description: 'Hackathon Begins' },
-      { time: '5:00 PM', description: 'Tea Break' },
-      { time: '7:00 PM', description: 'Checkpoint 1' },
-      { time: '8:30 PM', description: 'Dinner' },
-      { time: '11:30 PM', description: 'Checkpoint 2' }
+      { time: '10:30 AM', description: 'EVENT KICKOFF AND INTRODUCTION' },
+      { time: '10:30 AM', description: 'WHAT IS TINKERHUB AND TINKERSPACE, AND WHY?' },
+      { time: '10:40 AM', description: 'INTRO SESSION: TECH FOR GOOD' },
+      { time: '11:00 AM', description: 'EVENT INTRODUCTION' },
+      { time: '11:15 AM', description: 'PRE-REQUISITES CHECK + CONTINUOUS EVALUATION' },
+      { time: '11:25 AM', description: 'WORKSHOP (HANDS-ON SESSION)' },
+      { time: '12:30 PM', description: 'BREAK FOR LUNCH' },
+      { time: '2:00 PM', description: 'HACKATHON BEGINS' },
+      { time: '5:00 PM', description: 'TEA BREAK' },
+      { time: '7:00 PM', description: 'CHECKPOINT 1' },
+      { time: '8:30 PM', description: 'DINNER' },
+      { time: '11:30 PM', description: 'CHECKPOINT 2' }
     ]
   },
   {
     day: 'Day 2',
     events: [
-      { time: '12:30 AM', description: 'Midnight Side Events' },
-      { time: '8:00 AM', description: 'Checkpoint 3' },
-      { time: '9:00 AM', description: 'Breakfast' },
-      { time: '10:20 AM', description: 'Present Final PPT Model' },
-      { time: '1:00 PM', description: 'Final Checkpoint + Lunch' },
-      { time: '3:00 PM', description: 'Presentations Begin' },
-      { time: '5:00 PM', description: 'Judgement + Tea Break' },
-      { time: '5:30 PM', description: 'Prize Distribution' },
-      { time: '6:00 PM', description: 'Event Ends' }
+      { time: '12:30 AM', description: 'MIDNIGHT SIDE EVENTS' },
+      { time: '8:00 AM', description: 'CHECKPOINT 3' },
+      { time: '9:00 AM', description: 'BREAKFAST' },
+      { time: '10:20 AM', description: 'PRESENT FINAL PPT MODEL' },
+      { time: '1:00 PM', description: 'FINAL CHECKPOINT + LUNCH' },
+      { time: '3:00 PM', description: 'PRESENTATIONS BEGIN' },
+      { time: '5:00 PM', description: 'JUDGEMENT + TEA BREAK' },
+      { time: '5:30 PM', description: 'PRIZE DISTRIBUTION' },
+      { time: '6:00 PM', description: 'EVENT ENDS' }
     ]
   }
 ];
+```
 
 
   useEffect(() => {
