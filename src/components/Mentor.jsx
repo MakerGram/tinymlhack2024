@@ -37,8 +37,8 @@ const teamData = [
   {
     name: 'Sibin K S ',
     role: 'Mentor',
-    image: 'https://i.ibb.co/T8yL7qH/IMG-20241203-WA0010.jpg',
-    linkedin: 'https://media.licdn.com/dms/image/v2/D5603AQHabX52AVrOZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681462417358?e=1740009600&v=beta&t=55NiPZo3N5EeYM-bA5a6ZcJZPrTAIeefu9K6j9WBstQ'
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQHabX52AVrOZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681462417358?e=1740009600&v=beta&t=55NiPZo3N5EeYM-bA5a6ZcJZPrTAIeefu9K6j9WBstQ',
+    linkedin : 'https://www.linkedin.com/in/sibin-k-s-084081113/'
   },
 
   {
