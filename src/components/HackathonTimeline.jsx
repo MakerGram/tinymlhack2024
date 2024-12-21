@@ -10,7 +10,6 @@ const HackathonTimeline = () => {
       events: [
         { time: '9:30 AM', description: 'CHECK-IN STARTS' },
         { time: '10:30 AM', description: 'EVENT KICKOFF ' },
-        { time: '11:00 AM', description: 'TEAM FORMATION' },
         { time: '12:00 PM', description: 'HANDS-ON SESSIONS' },
         { time: '1:00 PM', description: 'BREAK' },
         { time: '3:00 PM', description: 'BUILDING SOLUTION' },
