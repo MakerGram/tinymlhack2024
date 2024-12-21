@@ -88,7 +88,7 @@ const RegistrationClosedButton = ({ className }) => (
 
 const DocButton = ({ isMobile }) => (
   <motion.a
-    href="https://docs.google.com"
+    href="https://docs.tinymlhack.com"
     target="_blank"
     rel="noopener noreferrer"
     whileHover={{ scale: 1.05 }}
