@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Menu } from "lucide-react";
+import { X, Menu, FileText } from "lucide-react";
 
 const navigationItems = [
   { id: 1, label: "ABOUT", section: "about" },
@@ -86,6 +86,34 @@ const RegistrationClosedButton = ({ className }) => (
   </div>
 );
 
+const DocButton = ({ isMobile }) => (
+  <motion.a
+    href="https://docs.google.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.95 }}
+    className={`
+      flex items-center gap-1.5 xs:gap-2
+      text-white hover:text-indigo-300 
+      transition-colors cursor-pointer
+      font-medium tracking-wide
+      ${isMobile ? 
+        'text-lg xs:text-xl sm:text-2xl md:text-3xl py-2 xs:py-3 sm:py-4' : 
+        'text-xs xs:text-sm sm:text-base'}
+    `}
+  >
+    <FileText className={`
+      ${isMobile ? 
+        'w-5 h-5 xs:w-6 xs:h-6 sm:w-7 sm:h-7 md:w-8 md:h-8' : 
+        'w-4 h-4 xs:w-5 xs:h-5 sm:w-6 sm:h-6'}
+    `} />
+    <span>DOC.TINYML</span>
+  </motion.a>
+);
+
+
+
 // Navigation Component
 export function Navbarlinks() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -158,9 +186,10 @@ export function Navbarlinks() {
             {item.label}
           </motion.div>
         ))}
+        <DocButton isMobile={false} />
       </nav>
 
-      <AnimatePresence>
+            <AnimatePresence>
         {isMenuOpen && (
           <motion.div 
             initial="hidden"
@@ -176,14 +205,22 @@ export function Navbarlinks() {
                 className="text-lg xs:text-xl sm:text-2xl md:text-3xl text-white py-2 xs:py-3 sm:py-4 cursor-pointer"
                 variants={linkVariants}
                 custom={index}
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
                 whileTap={{ scale: 0.95 }}
               >
                 {item.label}
               </motion.div>
             ))}
+            {/* Mobile Doc Button */}
+            <motion.div
+              variants={linkVariants}
+              custom={navigationItems.length}
+              className="mt-2"
+            >
+              <DocButton 
+                isMobile={true} 
+                onClick={() => setIsMenuOpen(false)}
+              />
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
