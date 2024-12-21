@@ -156,7 +156,7 @@ const timeline = [
                       </span>
                     </div>
 
-                    <p className="text-white text-xs leading-tight tracking-[3px] sm:tracking-[5px]">
+                    <p className="text-white text-xs leading-tight tracking-[3px] sm:tracking-[4px]">
                       {event.description}
                     </p>
                   </div>
