@@ -6,7 +6,6 @@ const HackathonTimeline = () => {
 
 Here’s the timeline with all descriptions in capital letters:
 
-```javascript
 const timeline = [
   {
     day: 'Day 1',
@@ -40,7 +39,6 @@ const timeline = [
     ]
   }
 ];
-```
 
 
   useEffect(() => {
