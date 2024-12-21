@@ -29,10 +29,34 @@ const teamData = [
     linkedin: 'https://www.linkedin.com/in/abhay-pa/'
   },
   {
-    name: 'Vinu',
+    name: 'Nekhil',
     role: 'Mentor',
-    image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
-    linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
+    image: 'https://hackster.imgix.net/uploads/attachments/1641618/_MYKn6ydlyl.blob?auto=compress%2Cformat&w=200&h=200&fit=min&dpr=2',
+    linkedin: 'https://www.hackster.io/DkMt'
+  },
+  {
+    name: 'Sibin K S ',
+    role: 'Mentor',
+    image: 'https://i.ibb.co/T8yL7qH/IMG-20241203-WA0010.jpg',
+    linkedin: 'https://media.licdn.com/dms/image/v2/D5603AQHabX52AVrOZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681462417358?e=1740009600&v=beta&t=55NiPZo3N5EeYM-bA5a6ZcJZPrTAIeefu9K6j9WBstQ'
+  },
+  {
+    name: 'Saheen Palayi',
+    role: 'Mentor',
+    image: 'https://i.ibb.co/T8yL7qH/IMG-20241203-WA0010.jpg',
+    linkedin: 'https://www.linkedin.com/in/sibin-k-s-084081113/'
+  },
+  {
+    name: 'Shamsudheen K C',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQEu3bibpZBSgg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719014235809?e=1740009600&v=beta&t=1q8_wp64v9ySZ0PSLRopM_F6oXK6u8PQNP85q9VL5F8',
+    linkedin: 'https://www.linkedin.com/in/shamsu-musthafa/'
+  },
+  {
+    name: 'Rafi Rasheed T C ',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/C4D03AQG-tc6ObmRv4g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1610905646014?e=1740009600&v=beta&t=6jwrE4XAwo4a4HOdsaE1ViP_IwsDww2WkTu92CnPu9s',
+    linkedin: 'https://www.linkedin.com/in/rafitc/'
   },
   {
     name: 'Amal',
