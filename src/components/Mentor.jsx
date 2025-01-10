@@ -5,12 +5,6 @@ import 'react-multi-carousel/lib/styles.css';
 
 const teamData = [
   {
-    name: 'Muhammed Zain',
-    role: 'Mentor',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQG9kUghLVeOXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1669191931988?e=1738800000&v=beta&t=k5C5wVzoTSZHMHRB5nn2HnAbY2Vg2nq9Y-oJdch39VE',
-    linkedin: 'https://www.linkedin.com/in/zainmfd/'
-  },
-  {
     name: 'Salman Faris',
     role: 'Mentor',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
@@ -23,16 +17,16 @@ const teamData = [
     linkedin: 'https://www.linkedin.com/in/saheenpalayi/?originalSubdomain=in'
   },
   {
+    name: 'Akhil Joseph',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQFYdMkruSzoSQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728320896182?e=1740009600&v=beta&t=GRKWPz3BTcPgEqoQP_daStoQgt71bUC_P86_vKsCsFw',
+    linkedin: 'https://www.linkedin.com/in/coolakhil'
+  },
+  {
     name: 'Akhil',
     role: 'Mentor',
     image: 'https://i.ibb.co/T8yL7qH/IMG-20241203-WA0010.jpg',
     linkedin: 'https://www.linkedin.com/in/abhay-pa/'
-  },
-  {
-    name: 'Sibin K S ',
-    role: 'Mentor',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQHabX52AVrOZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681462417358?e=1740009600&v=beta&t=55NiPZo3N5EeYM-bA5a6ZcJZPrTAIeefu9K6j9WBstQ',
-    linkedin : 'https://www.linkedin.com/in/sibin-k-s-084081113/'
   },
   {
     name: 'Shamsudheen K C',
@@ -51,12 +45,6 @@ const teamData = [
     role: 'Mentor',
     image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
     linkedin: 'https://www.linkedin.com/in/swalahamani/'
-  },
-  {
-    name: 'Akhil Joseph',
-    role: 'Mentor',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQFYdMkruSzoSQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728320896182?e=1740009600&v=beta&t=GRKWPz3BTcPgEqoQP_daStoQgt71bUC_P86_vKsCsFw',
-    linkedin: 'https://www.linkedin.com/in/coolakhil'
   },
   {
     name: 'Yadev Jayachandran',
