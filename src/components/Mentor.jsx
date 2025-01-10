@@ -29,18 +29,11 @@ const teamData = [
     linkedin: 'https://www.linkedin.com/in/abhay-pa/'
   },
   {
-    name: 'Nekhil',
-    role: 'Mentor',
-    image: 'https://hackster.imgix.net/uploads/attachments/1641618/_MYKn6ydlyl.blob?auto=compress%2Cformat&w=200&h=200&fit=min&dpr=2',
-    linkedin: 'https://www.hackster.io/DkMt'
-  },
-  {
     name: 'Sibin K S ',
     role: 'Mentor',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQHabX52AVrOZw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681462417358?e=1740009600&v=beta&t=55NiPZo3N5EeYM-bA5a6ZcJZPrTAIeefu9K6j9WBstQ',
     linkedin : 'https://www.linkedin.com/in/sibin-k-s-084081113/'
   },
-
   {
     name: 'Shamsudheen K C',
     role: 'Mentor',
@@ -59,6 +52,18 @@ const teamData = [
     image: 'https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg',
     linkedin: 'https://www.linkedin.com/in/swalahamani/'
   },
+  {
+    name: 'Akhil Joseph',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQFYdMkruSzoSQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1728320896182?e=1740009600&v=beta&t=GRKWPz3BTcPgEqoQP_daStoQgt71bUC_P86_vKsCsFw',
+    linkedin: 'https://www.linkedin.com/in/coolakhil'
+  },
+  {
+    name: 'Yadev Jayachandran',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQFTmwvl08hW5w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1725999477116?e=1740009600&v=beta&t=wS977Iaejq0H67i2K9soZ-oyG6xyl7kDM0_J-hLlZ9I',
+    linkedin: 'https://www.linkedin.com/in/yadev-jayachandran/'
+  }
   
 ];
 
