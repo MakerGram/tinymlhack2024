@@ -47,6 +47,18 @@ const teamData = [
     linkedin: 'https://www.linkedin.com/in/yadev-jayachandran/'
   },
   {
+    name: 'M Fasil',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/D4D03AQE3TZIn7tJrhA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715076258371?e=1741824000&v=beta&t=Y2YEWw10f1pRxkSmgPzbfM6C5uZkSoBjftqsr2oaZF8',
+    linkedin: 'https://www.linkedin.com/in/fasilm/'
+  },
+  {
+    name: 'jogin francis',
+    role: 'Mentor',
+    image: 'https://media.licdn.com/dms/image/v2/C5603AQG9dRFKRCD2GQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1629564744580?e=1741824000&v=beta&t=-QkFiSm86Xzy6zhEz8SuJllOsFUhzS1FS421QQG6p_Q',
+    linkedin: 'https://www.linkedin.com/in/jogin-francis/'
+  },
+  {
     name: 'Salman Faris',
     role: 'Mentor',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',

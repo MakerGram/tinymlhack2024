@@ -14,7 +14,7 @@ const teamData = [
   {
     name: 'Alosh Denny',
     role: 'PoC TinyML',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQEgM1ISjqjxpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729781922307?e=1738800000&v=beta&t=z6vVF2SphG4KqU6tVQasN520GdNIdHQ4jUc5dVCTdWU',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQFjsdIbsE93nw/profile-displayphoto-shrink_200_200/B56ZPepLNQHQAc-/0/1734607157710?e=1741824000&v=beta&t=MH5h8M6fsSwR_z3ES1f5ggyN5AXsJzxenCqS3Vw6lfw',
     linkedin: 'https://www.linkedin.com/in/aloshdenny/'
   },
   {
@@ -22,6 +22,18 @@ const teamData = [
     role: 'PoC TinyML',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQGFM0jxtD-7Mg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730136127703?e=1738800000&v=beta&t=ttWWX0I80d6CE1vy3RDO89k85oGSt7dckonuzziRt10',
     linkedin: 'https://www.linkedin.com/in/jasim-cm/'
+  },
+  {
+    name: 'Ishika Ishani',
+    role: 'Web Developer',
+    image: 'https://media.licdn.com/dms/image/v2/D5603AQGDvTRVE0Xk2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718221867398?e=1738800000&v=beta&t=6Jf1M4cZrOlTB-_F5wafo7EOa7o4uty_BWKpxSnpvDg',
+    linkedin: 'https://www.linkedin.com/in/ishika-ishani/'
+  },
+  {
+    name: 'Nandana V S',
+    role: 'Media Lead',
+    image: 'https://media.licdn.com/dms/image/v2/D4E03AQHrV-O1hl4LVg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1714020106254?e=1741824000&v=beta&t=_1eEwmbosntDVSfLXwl5N99wB2F3GhM6R90KW5mxm1I',
+    linkedin: 'https://www.linkedin.com/in/nandana-vs/'
   },
   {
     name: 'Swalah Amani',
@@ -41,14 +53,12 @@ const teamData = [
     image: 'https://media.licdn.com/dms/image/v2/D5603AQEdYT8xFXXPQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1681062639796?e=1738800000&v=beta&t=fRsOvBejLXpmfoqWRpJ_-m88MH8ZZ1AjnoMBRF8-1O8',
     linkedin: 'https://www.linkedin.com/in/salmanfarisvp/'
   },
- 
   {
     name: 'Hazin',
     role: 'Video Editor',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQFnyKbssr3lIg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729970909107?e=1738800000&v=beta&t=1hgGxHhNuaRJd6GXvsj18TQDYaXZd6IDSgSJ-E7XZHw',
     linkedin: 'https://www.linkedin.com/in/muhammed-hasin-6a1968270'
   },
-  
   {
     name: 'Dheeraj Kurungadath',
     role: 'Designer',
@@ -61,13 +71,6 @@ const teamData = [
     image: 'https://i.ibb.co/0ByPZN4/Screenshot-2024-12-03-at-8-24-24-AM.png',
     linkedin: 'https://www.linkedin.com/in/adithyan-pramod-73b81527b/'
   },
-  {
-    name: 'Ishika Ishani',
-    role: 'Web Developer',
-    image: 'https://media.licdn.com/dms/image/v2/D5603AQGDvTRVE0Xk2w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718221867398?e=1738800000&v=beta&t=6Jf1M4cZrOlTB-_F5wafo7EOa7o4uty_BWKpxSnpvDg',
-    linkedin: 'https://www.linkedin.com/in/ishika-ishani/'
-  }
-
 
 ];
 
